@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="utf-8">
+  <title>{{ config.title }}{% if page.title %} - {{ page.title }}{% endif %}</title>
+  <link rel="stylesheet" href="/base.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald&family=Montserrat&display=swap">
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <div class="site-title">
+        <a href="/">/</a>
+      </div>
+      <div class="menu">
+    {% for item in config.extra.menu_items %}
+      <a href="{{ item.path }}">{{ item.name }}</a>
+      {% endfor %}
+      </div>
+    </div>
+  </nav>
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+  {% block extra %}{% endblock %}
+</body>
+</html>

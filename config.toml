@@ -1,0 +1,16 @@
+base_url = "https://lifjellopp.no/"
+compile_sass = false
+build_search_index = false
+
+[markdown]
+highlight_code = false
+
+[extra]
+subtitle = "Midt-Telemarks tøffeste klatreritt"
+
+menu_items = [
+  { name = "Registrering", path = "/registrering" },
+  { name = "Kontakt", path = "/kontakt" },
+  { name = "Resultater", path = "/resultater" },
+  { name = "Trase", path = "/trase" },
+]
