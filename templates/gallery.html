@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="/gallery.css">
+{% endblock %}
+
+{% block content %}
+  <h1>{{ page.title }}</h1>
+  {{ page.content | safe }}
+
+  <div class="gallery-grid">
+    {% set images = ["2024-innspurt.jpeg", "2024-lifjellstua.jpeg", "2024-samling-topp.jpeg"] %}
+    {% for img in images %}
+      <div class="gallery-item">
+        <img src="/gallery/{{ img }}" alt="Galleri bilde">
+      </div>
+    {% endfor %}
+  </div>
+{% endblock %}

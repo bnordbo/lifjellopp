@@ -4,13 +4,14 @@
   <meta charset="utf-8">
   <title>{{ config.title }}{% if page.title %} - {{ page.title }}{% endif %}</title>
   <link rel="stylesheet" href="/base.css">
+  {% block extra_css %}{% endblock %}
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald&family=Montserrat&display=swap">
 </head>
 <body>
   <nav>
     <div class="nav-container">
-      <div class="site-title">
-        <a href="/">/</a>
+      <div class="site-logo">
+        <a href="/">Hjem</a>
       </div>
       <div class="menu">
     {% for item in config.extra.menu_items %}
