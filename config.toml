@@ -11,7 +11,7 @@ subtitle = "Midt-Telemarks tøffeste klatreritt"
 menu_items = [
   { name = "Registrering", path = "/registrering" },
   { name = "Trase", path = "/trase" },
-  { name = "Galleri", path = "/galleri" },
+#  { name = "Galleri", path = "/galleri" },
   { name = "Resultater", path = "/resultater" },
   { name = "Kontakt", path = "/kontakt" },
 ]
