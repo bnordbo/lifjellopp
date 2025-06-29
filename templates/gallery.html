@@ -12,7 +12,7 @@
     {% set images = ["2024-innspurt.jpeg", "2024-lifjellstua.jpeg", "2024-samling-topp.jpeg"] %}
     {% for img in images %}
       <div class="gallery-item">
-        <img src="/gallery/{{ img }}" alt="Galleri bilde">
+        <a href="/gallery/{{ img }}" target="_blank"><img src="/gallery/{{ img }}" alt="Galleri bilde"></a>
       </div>
     {% endfor %}
   </div>
