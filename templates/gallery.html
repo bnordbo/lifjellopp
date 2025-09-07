@@ -2,6 +2,7 @@
 
 {% block extra_css %}
 <link rel="stylesheet" href="/gallery.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
 {% endblock %}
 
 {% block content %}
@@ -9,11 +10,22 @@
   {{ page.content | safe }}
 
   <div class="gallery-grid">
-    {% set images = ["2024-innspurt.jpeg", "2024-lifjellstua.jpeg", "2024-samling-topp.jpeg"] %}
-    {% for img in images %}
+    {% set gallery = load_data(path="data/gallery.toml") %}
+    {% set image_base_url = get_env(name = "GALLERY", default=config.extra.image_base_url) %}
+    {% for img in gallery.images %}
+      {% set url = image_base_url ~ img.file %}
       <div class="gallery-item">
-        <a href="/gallery/{{ img }}" target="_blank"><img src="/gallery/{{ img }}" alt="Galleri bilde"></a>
+        <a href="{{ url }}" data-lightbox="image" >
+          <img src="{{ url }}" alt="Galleri bilde" loading="lazy">
+        </a>
       </div>
     {% endfor %}
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
+  <script>
+    lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true
+    })
+  </script>
 {% endblock %}
