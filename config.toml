@@ -12,7 +12,7 @@ image_base_url = "https://www.s3.eu-north.cloud.web1.fi/lifjell-opp-2025/"
 menu_items = [
   { name = "Registrering", path = "/registrering" },
 #  { name = "Praktisk", path = "/praktisk" },
-  { name = "Trase", path = "/trase" },
+  { name = "Trasé", path = "/trase" },
   { name = "Galleri", path = "/galleri" },
   { name = "Resultater", path = "/resultater" },
 ]
