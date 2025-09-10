@@ -25,6 +25,25 @@ body {
     color: white;
 }
 
+body {
+    background-image: image-set(
+        url("/background.webp") type("image/webp"),
+        url("/background.jpg") type("image/jpeg")
+    );
+}
+
+@media (max-width: 768px) {
+    body {
+        background: url("/background-mobile.jpg") no-repeat center center fixed;
+        background-size: cover;
+
+        background-image: image-set(
+            url("/background-mobile.webp") type("image/webp"),
+            url("/background-mobile.jpg") type("image/jpeg")
+        );
+    }
+}
+
 a {
     color: white;
     text-decoration: underline dotted;
@@ -96,7 +115,7 @@ main {
 footer {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 1.2rem;
   padding: 1rem;
   position: fixed;
   bottom: 0;
