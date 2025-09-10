@@ -13,10 +13,11 @@
     {% set gallery = load_data(path="data/gallery.toml") %}
     {% set image_base_url = get_env(name = "GALLERY", default=config.extra.image_base_url) %}
     {% for img in gallery.images %}
-      {% set url = image_base_url ~ img.file %}
+      {% set full_url = image_base_url ~ "images/" ~ img.file %}
+      {% set thumb_url = image_base_url ~ "thumbs/" ~ img.file %}
       <div class="gallery-item">
-        <a href="{{ url }}" data-lightbox="image" >
-          <img src="{{ url }}" alt="Galleri bilde" loading="lazy">
+        <a href="{{ full_url }}" data-lightbox="image" >
+          <img src="{{ thumb_url }}" alt="Galleri bilde" loading="lazy">
         </a>
       </div>
     {% endfor %}
