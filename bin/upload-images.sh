@@ -6,7 +6,7 @@
 # and make them publicly readable.
 
 BUCKET_NAME="lifjellopp"
-LOCAL_DIR="/Users/bn/Contexts/Skarphedin/Lifjell opp 2025/Site/static/gallery"
+LOCAL_DIR="/Users/bn/Contexts/Skarphedin/LifjellOpp2025/Site/static/gallery"
 ENDPOINT_URL="https://www.s3.eu-north.cloud.web1.fi"
 AWS_ACCESS_KEY_ID="op://Private/Web1 access key/username"
 AWS_SECRET_ACCESS_KEY="op://Private/Web1 access key/credential"

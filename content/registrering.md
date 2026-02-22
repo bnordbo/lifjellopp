@@ -4,10 +4,8 @@ title = "Registrering"
 
 Rittet er i utgangspunktet turritt med tidtaking, men vi arrangerer også et trimritt på samme trasé.
 
-- [Påmelding turritt med tidtaking][ptmt] (fra 17 år)
-- [Påmelding trimritt][ptur] (fra 13 år)
+- [Meld deg på her!][mdph]
 
-Til og med 31. august koster påmelding kr 100 for medlemmer i IL Skarphedin, og kr 200 for ikke-medlemmer. Deltageravgiften inkluderer drikke eller snack på toppen og pizza på Pizzafjoset etter rittet.
+Til og med 28. august er deltageravgiften kr 140 for medlemmer i IL Skarphedin, og kr 250 for ikke-medlemmer. Dette inkluderer drikke eller snack på toppen og buffet på Pizzafjoset etter rittet.
 
-[ptmt]: https://signup.eqtiming.com/signup/lifjell-opp/g295.48807?event=lifjellopp
-[ptur]: https://signup.eqtiming.com/signup/lifjell-opp-trim-2025/g295.52441?event=lifjellopp
+[mdph]: https://signup.eqtiming.com/arrangement/g295.56797?event=lifjellopp
